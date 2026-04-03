@@ -1,22 +1,35 @@
-# walking-droplet-diffraction
-Python code for tracking and analysing walking oil droplet trajectories through single- and double-slit geometries (BSc Physics project, University of Bristol)
+# Walking Droplet Diffraction Experiment
 
-## Scripts
+This project investigates quantum-like behaviour in a classical hydrodynamic system, where millimetre-sized oil droplets "walk" across a vertically vibrated fluid bath and are guided by the waves they generate. The experiment explores phenomena analogous to quantum diffraction and interference using single- and double-slit geometries.
 
-- **Tracking_Algorithm.py** — Real-time droplet detection and tracking using an Allied Vision camera (Vimba SDK). Outputs trajectory CSVs with frame, x, y coordinates.
-- **Trajectory_Reader_-_Single_slit.py** — Post-processing and analysis of single-slit trajectory data: speed filtering, deflection angle measurement, Fraunhofer/Fresnel theory overlays.
-- **Trajectory_Reader_-_Double_slit.py** — Post-processing and analysis of double-slit trajectory data: speed filtering, deflection angle histograms, double-slit interference theory overlays.
+---
 
-## Setup
+## Repository Structure
 
-**Note:** File paths in each script are hardcoded to local directories and will need to be updated before use. Edit the `FILEPATH` and `OUTPUT_FOLDER` variables at the top of each script to point to your own data and output locations.
+### `cad/`
+CAD designs for the experimental apparatus, including:
+- Slit module (single and double slit configurations)  
+- Droplet launcher  
+- LED mounting system  
+- Double-slit centre piece  
 
-### Dependencies
+Each component is provided in multiple formats (`.dwg`, `.ipt`, `.step`) to support reproducibility and fabrication.
 
-- Python 3
-- NumPy, Pandas, Matplotlib, SciPy, OpenCV (`cv2`)
-- `vmbpy` (Allied Vision Vimba SDK — required for `Tracking_Algorithm.py` only)
+---
 
-## Authors
+### `code/`
+Python and Arduino code used for data acquisition and analysis:
+- Droplet tracking using computer vision (OpenCV)  
+- Trajectory analysis for single- and double-slit experiments  
+- Arduino control for automated droplet generation  
 
-Jacob Brooke and Harry Tonge
+---
+
+### `data/` *(if applicable)*  
+Processed or example trajectory datasets used for analysis and validation.
+
+---
+
+## Summary
+
+Together, the CAD designs and code provide a complete experimental and computational framework for studying pilot-wave hydrodynamics and its connection to quantum-like behaviour.
