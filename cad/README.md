@@ -12,24 +12,35 @@ The designs prioritise stability, modularity, and minimal disturbance to the flu
 
 ## Components
 
-### Slit Module (`slits.ipt`)
+### Slit Module (`slits`)
 - Primary experimental insert used for both single- and double-slit configurations  
 - Enables adjustable slit geometries for diffraction experiments  
-- Designed to sit as a submerged barrier within the vibrating bath  
+- Designed to function as a submerged barrier within the vibrating bath  
 
-### Droplet Launcher (`droplet_launcher_v2.ipt`)
+### Droplet Launcher (`droplet_launcher_v2`)
 - Final design used for controlled droplet generation  
 - Compatible with an Arduino-controlled relay system  
-- Based on an improved design inspired by prior experimental work (e.g. Pucci et al., 2017)  
+- Based on an improved design inspired by prior experimental work  
 
-### LED Mount (`led_mount.ipt`)
+### LED Mount (`led_mount`)
 - Mounting system for illumination of the droplet  
 - Ensures consistent lighting conditions for high-contrast imaging and tracking  
 
-### Double Slit Centre Piece (`double_slit_centre_piece_5mm.ipt`)
+### Double Slit Centre Piece (`double_slit_centre_piece_5mm`)
 - Central insert for double-slit experiments  
-- Tested as part of slit geometry development  
+- Tested during slit geometry development  
 - Included for completeness and potential reuse  
+
+---
+
+## File Formats
+
+The CAD designs are provided in multiple formats to maximise compatibility and reproducibility:
+
+- `.dwg` – Autodesk drawing files (primary format used)  
+- `.ipt` – Native Autodesk Inventor part files  
+- `.step` – Universal CAD exchange format (compatible with most CAD software)  
+- `.stl` *(where available)* – Mesh format for 3D printing  
 
 ---
 
@@ -46,8 +57,8 @@ All components were designed to:
 
 ## Notes
 
-- All files are provided in Autodesk Inventor (`.ipt`) format  
-- Designs can be exported to `.STL` or `.STEP` for fabrication if required  
+- Files can be opened in Autodesk Inventor, AutoCAD, or other compatible CAD software  
+- The `.step` files provide cross-platform compatibility for reuse and modification  
 - The final experimental configuration primarily used the slit module and droplet launcher  
 
 ---
